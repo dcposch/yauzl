@@ -596,9 +596,9 @@ function dosDateTimeToDate(date, time) {
 }
 
 function validateFileName(fileName) {
-  if (fileName.indexOf("\\") !== -1) {
-    return "invalid characters in fileName: " + fileName;
-  }
+  //if (fileName.indexOf("\\") !== -1) {
+  //  return "invalid characters in fileName: " + fileName;
+  //}
   if (/^[a-zA-Z]:/.test(fileName) || /^\//.test(fileName)) {
     return "absolute path: " + fileName;
   }
